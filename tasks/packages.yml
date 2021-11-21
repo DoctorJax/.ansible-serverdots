@@ -1,0 +1,25 @@
+---
+- name: Installing required packages
+  package:
+    name:
+      - git
+      - htop
+      - neofetch
+      - zsh
+      - zsh-syntax-highlighting
+      - zsh-autosuggestions
+      - starship
+      - neovim
+      - vim
+      - emacs
+      - nodejs
+      - tmux
+      - nnn
+      - ranger
+      - cargo
+    state: present
+  become: true
+
+- name: Installing packages using cargo
+  become_user: jackson
+  command: "cargo install -f exa bat du-dust"
