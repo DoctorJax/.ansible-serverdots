@@ -6,7 +6,7 @@ home_path: "~"
 dotfiles:
   - .config
   - .emacs.d
-  - .local/bin
+  - .scripts
   - .xmonad
   - .aliasrc
   - .bashrc
